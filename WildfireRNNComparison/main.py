@@ -25,16 +25,15 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torchinfo import summary
 from torchview import draw_graph
+import torchmetrics
 import geopandas as gpd
 import folium
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 from datetime import datetime, timedelta
-import torchmetrics
 
 # Define your MAP_KEY
-MAP_KEY = 00000000000000000  # Replace with your actual MAP_KEY
+MAP_KEY = "00000000000000000"  # Replace with your actual MAP_KEY
 
 # Try and get the data. If valid, you will see information pertaining to your key. Otherwise
 # an error will be reported. This usually has to do with having an invalid API key.
